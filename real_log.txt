@@ -1,0 +1,1848 @@
+Big Exception - 37_붐_23.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_24.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_26.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_28.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_29.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_3.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_35.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_36.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_37.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_39.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_40.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_41.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_45.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_49.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_5.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_53.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_54.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_58.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_63.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_64.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_67.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_69.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_7.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_71.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_76.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_78.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_8.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_82.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_86.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_87.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_88.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_9.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_붐_90.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_0.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_1.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_10.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_12.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_14.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_15.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_16.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_18.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+Big Exception - 37_비_2.jpg 2 root error(s) found.
+  (0) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+	 [[pnet/prob1/_105]]
+  (1) Unknown: Failed to get convolution algorithm. This is probably because cuDNN failed to initialize, so try looking to see if a warning log message was printed above.
+	 [[node pnet/conv1/Conv2D (defined at C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py:1748) ]]
+0 successful operations.
+0 derived errors ignored.
+
+Original stack trace for 'pnet/conv1/Conv2D':
+  File "C:/Users/DeepLearning_3/PycharmProjects/ipcgan_clone/demo.py", line 11, in <module>
+    from preprocess.preprocess_cacd import getMTCNN_result
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\preprocess_cacd.py", line 130, in <module>
+    detector=MTCNN(steps_threshold=threshold,scale_factor=factor,min_face_size=minSize)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 196, in __init__
+    self.__pnet = PNet(self.__session, False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\network.py", line 44, in __init__
+    self._config()
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\mtcnn.py", line 55, in _config
+    padding='VALID', relu=False)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 126, in new_conv
+    output = convolve(input_layer, kernel)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\mtcnn\layer_factory.py", line 121, in <lambda>
+    padding=padding)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\nn_ops.py", line 2010, in conv2d
+    name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\ops\gen_nn_ops.py", line 1071, in conv2d
+    data_format=data_format, dilations=dilations, name=name)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\op_def_library.py", line 794, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\util\deprecation.py", line 507, in new_func
+    return func(*args, **kwargs)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3357, in create_op
+    attrs, op_def, compute_device)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 3426, in _create_op_internal
+    op_def=op_def)
+  File "C:\Users\DeepLearning_3\Anaconda3\envs\pytorch_cgan\lib\site-packages\tensorflow_core\python\framework\ops.py", line 1748, in __init__
+    self._traceback = tf_stack.extract_stack()
+
