@@ -6,7 +6,7 @@
 > Team Member's E-mail:   
 > * river951@naver.com (Kangwoon Kim)  
 > * ehdghksahd@naver.com (Donghwan Seo)  
-> * 123okk2@ (Minwoo Lee)  
+> * 123okk2@naver.com (Minwoo Lee)  
 
 > Date: 2019-11-26
 
