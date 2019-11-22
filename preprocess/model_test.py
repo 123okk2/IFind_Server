@@ -2,7 +2,7 @@ import os
 
 '''
 단독실행 시에는 
-20_레오나르도,30_레오나르도 4,4 0,0
+36_이정재_00,36_이정재_01,36_이정재_02,36_이정재_03,36_이정재_04 0,1,2,3,4 0,0,0,0,0
 '''
 
 # import firebase_admin
@@ -101,7 +101,7 @@ models = {
     'w65_18_3_115':r'C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\pretrained_models\w65_18\gepoch_3_iter_11500.pth',
     'w75_2_0_6':r'C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\pretrained_models\weight75_2_0\gepoch_0_iter_6000.pth',
     'g_w_90':r'C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\pretrained_models\weight65_18_1\gepoch_1_iter_6000.pth',
-
+    'w65_18_b64_e10':r'C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\pretrained_models\weight65_18_b64_e10\depoch_7_iter_6000.pth'
 }
 # models = {'g_w_90':r'C:\Users\DeepLearning_3\PycharmProjects\ipcgan_clone\preprocess\pretrained_models\weight60_2_0\gepoch_0_iter_9000.pth'}
 
@@ -112,8 +112,8 @@ category_main_model = {
     0:('w65_18_3_7', False),
     1:('w65_18_3_115', True),
     2:('w65_18_3_5', False),
-    3:('w65_18_3_115', False), #7
-    4:('w65_18_3_115', False) #95
+    3:('w65_18_b64_e10', False), #7 # 115
+    4:('w65_18_b64_e10', False) #95 # 115
 }
 # with open('model_setting.json') as json_file:
 #     json_data = json.load(json_file)

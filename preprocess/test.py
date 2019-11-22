@@ -13,7 +13,7 @@ import numpy as np
 from PIL import Image
 from datetime import datetime
 import sys
-sys.path.append(r'C:\Users\DeepLearning_3\PycharmProjects\firebase_dump1\lib')
+sys.path.append(r'C:\Users\DeepLearning_3\PycharmProjects\firebase_dump1\service\lib')
 from tinydb_manager import TinyDBManager
 from tinydb import Query, TinyDB
 

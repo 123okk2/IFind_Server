@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Finding Missing Child using IPCGANs
 
 > Author: Jaehyeok Choi, Gangwoon Kim, Donghwan Seo, Minwoo Lee
@@ -19,3 +20,7 @@
 
 
 
+=======
+# IFind
+This is finding missing child system repository. - Computer Software Engineering, KIT, South Korea -
+>>>>>>> 6df52f624bce35269c3d1a0c8125246f1b1b2ffa
