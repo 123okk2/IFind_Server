@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Finding Missing Child using IPCGANs
 
 > Author: Jaehyeok Choi, Gangwoon Kim, Donghwan Seo, Minwoo Lee
@@ -16,11 +15,3 @@
 >
 > It is the project in **CS0058** Subject a.k.a 창의융합종합설계 in CSE(Computer Software Engineering) of Kumoh National of Institute Technology.
 
----
-
-
-
-=======
-# IFind
-This is finding missing child system repository. - Computer Software Engineering, KIT, South Korea -
->>>>>>> 6df52f624bce35269c3d1a0c8125246f1b1b2ffa
