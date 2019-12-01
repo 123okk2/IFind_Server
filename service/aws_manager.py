@@ -215,7 +215,7 @@ class RekognitionManager:
 
         return response['DeletedFaces'], len(response['DeletedFaces'])
 
-    def searchFace(self, bucket, s3file, threshold=70, maxFaces=2):
+    def searchFace(self, bucket, s3file, threshold=70, maxFaces=15):
 
         response = self.client.search_faces_by_image(CollectionId=self.collection,
                                                 Image={'S3Object': {'Bucket': bucket, 'Name': s3file}},
@@ -350,9 +350,11 @@ class RekognitionManager:
 
 if __name__ == "__main__":
     am = AWSManager.getInstance()
-    am.connect("ifind", "IFCollection")
+    am.connect("ifind2", "IFCollection")
     s3m = am.getS3M()
     rekom = am.getRekoM()
+
+    rekom.makeCollection("IFCollection")
     rekom.getCollectionInfo()
     # am.registerFaces('tkndata\\tkn_decode_0.jpg')
     # s3m.delete("tkn_decode_0.jpg")
@@ -365,7 +367,7 @@ if __name__ == "__main__":
 '55eb1859-6ffe-4bcc-a189-817d3221a6c1'])
     #'ExternalImageId' (2020683411696)
     response = rekom.getFaces()
-    bucketName = "ifind"
+    bucketName = "ifind2"
     collectionId = 'IFCollection'
     fileName = "source.jpg"
     s3fileName = "source1.jpg"

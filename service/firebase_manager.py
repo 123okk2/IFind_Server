@@ -9,6 +9,8 @@
 #             u'born': 1817
 #         })
 #     print("Dump Complete - Collection " + colName + " with " + str(dumpCount) + " times. ")
+from firebase_admin import messaging
+
 
 class FBManager:
     def __init__(self, db=None):
@@ -148,3 +150,26 @@ class FBManager:
         group = self.__db.collection_group(colName)
         return group
 
+    def send_to_topic(self, topic):
+        # [START send_to_topic]
+        # The topic name can be optionally prefixed with "/topics/".
+        # See documentation on defining a message payload.
+        tmp = topic.split(" ")
+        tmp1 = ["서울특별시", "부산광역시", "대구광역시", "인천광역시", "광주광역시", "대전광역시", "울산광역시", "세종특별자치시", "경기도", "강원도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주특별자치도"]
+        tmp2 = ["seoul", "gyungki", "incheon", "gangwon", "choongbook", "daegeon", "saejong", "choongnam", "jeonbook", "jeonnam", "gwangju", "gyungbook", "daegu", "gyungnam", "woolsan", "busan", "jeju"]
+        pos = topic
+        for i in range(len(tmp1)):
+            if tmp1[i] == tmp[1]:
+                tmp[1] = tmp2[i]
+                break
+        message = messaging.Message(
+            data={
+                'pos': pos,
+            },
+            topic=tmp[1],
+        )
+
+        # Send a message to the devices subscribed to the provided topic.
+        response = messaging.send(message)
+        # Response is a message ID string.
+        print('Successfully sent message:', response)

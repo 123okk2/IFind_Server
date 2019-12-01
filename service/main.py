@@ -28,7 +28,7 @@ firebase_admin.initialize_app(cred)
 fm = FBManager(firestore.client())
 inst = am.getInstance()
 if inst.checkConnected() is False:
-    inst.connect('ifind', 'IFCollection')
+    inst.connect('ifind2', 'IFCollection')
 db = TinyDBManager(db_file=r'D:\Data\TinyDB\db.json', default_table='ganQueue')
 
 
@@ -270,8 +270,10 @@ def mine():
                 missing_long_posts = fm.readCollection(fm.getCollection(u'users/' + uid + u'/Missing_long_post'))
                 missing_short_posts = fm.readCollection(fm.getCollection(u'users/' + uid + u'/Missing_post'))
                 # empty는 항상 제거
-                del missing_short_posts['empty']
-                del missing_long_posts['empty']
+                if missing_short_posts['empty']:
+                    del missing_short_posts['empty']
+                if missing_long_posts['empty']:
+                    del missing_long_posts['empty']
 
                 # 단기, 장기 순
                 result_dict['result'] = True
@@ -349,7 +351,8 @@ def mine():
                 # id -> 이름들
                 res = fm.readCollection(fm.getCollection(u'users/' + uid + u'/child'))
                 # empty는 항상 제거
-                del res['empty']
+                if res['empty']:
+                    del res['empty']
 
                 result_dict['contents'] = []
                 result_dict['result'] = True
@@ -624,7 +627,7 @@ def post_page():
                                                                        u'date': missing_date
                                                                    })
                                 result_dict['result'] = True
-
+                                fm.send_to_topic("(" + name + "," + age + "세) " + missing_place)
                                 # s3 업로드
                                 faceIds = ie.uploadImg(inst, doc_ref.id, 'posts', pre_photo, None, True, True)
                                 if len(faceIds) > 0:
@@ -1016,7 +1019,7 @@ def search_face():
                 # 결과는 result true, similarity : 90
                 # err_code 는 미정
                 if inst.checkConnected() is False:
-                    inst.connect('ifind', 'IFCollection')
+                    inst.connect('ifind2', 'IFCollection')
                 result, value = inst.searchFaces([img])
 
                 if result is False and value is None:
@@ -1035,6 +1038,8 @@ def search_face():
                         for i in value[0]:
                             a = {}
                             mInfo = ie.getMissingByFace(fm, i['Face']['FaceId'])
+                            if not mInfo:
+                                continue
                             a['pid'] = mInfo.reference._path[1]
                             a.update(mInfo._data)
                             # 나머지 정보 주기
@@ -1083,7 +1088,7 @@ def compare_face():
                 # 결과는 result true, similarity : 90
                 # err_code 는 미정
                 if inst.checkConnected() is False:
-                    inst.connect('ifind', 'IFCollection')
+                    inst.connect('ifind2', 'IFCollection')
                 res = inst.compareFaces(usrImg, kidImg)
 
                 result_dict['result'] = True
