@@ -4,7 +4,7 @@ from flask import Flask,request
 from PIL import Image
 from gevent.pywsgi import WSGIServer
 import base64
-1
+
 
 
 app = Flask(__name__)
